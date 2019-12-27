@@ -10,6 +10,9 @@ module.exports = {
         path: path.join(__dirname, "/dist"),
         filename: "index.js"
     },
+    devServer: {
+        contentBase: path.resolve('public'),
+      },
     module: {
         rules: [{
             test: /\.js$/,
@@ -23,9 +26,12 @@ module.exports = {
         }, {
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
+        }, {
+            test: /\.scss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader']
         },
         {
-            test: /\.(png|jpg|gif)$/,
+            test: /\.(png|jpg|gif|jfif)$/,
             use: [
                 {
                     loader: 'file-loader'

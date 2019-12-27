@@ -1,0 +1,39 @@
+.Header {
+    width: 100%;
+    background-color: #242323;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 4em;
+
+    .nav-links {
+        width: 72%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'raleway';
+        letter-spacing: 0.2em;
+        height: 100%;
+
+        .nav-link {
+            text-decoration: none;
+            font-size: 16px;
+            color: #939393;
+
+            &:hover {
+                color: #ffffff;
+            }
+
+            &.active{
+                color: #ffffff;
+            }      
+        }
+
+        .brand-name {
+            text-decoration: none;
+            font-size: 32px;
+            color: #ffffff;
+        }
+    }
+}

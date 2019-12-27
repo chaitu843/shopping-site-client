@@ -1,0 +1,56 @@
+.category-card-container {
+
+    width: 100%;
+
+    .card-details {
+
+        width: 80%;
+        height: 470px;
+        margin: auto;
+        display: flex;
+
+        .card-image-container{
+            flex-basis: 50%;
+        }
+
+        .card-desc {
+            flex-basis: 50%;
+            position: relative;
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                color: #313131;
+                height: 30%;
+                position: absolute;
+                top: 35%;
+                width: 100%;
+
+                .heading {
+                    font-family: cursive;
+                    font-size: 1.8em;
+                }
+    
+                .catchLine {
+                    font-size: 1.5em;
+                    font-family: 'raleway';
+                }
+    
+                .category {
+                    font-size: 1.4em;
+                    font-family: 'raleway';
+                }
+    
+                hr {
+                    background: black;
+                    width: 14%;
+                    height: 3px;
+                    border: none;
+                }
+            }
+        }
+
+    }
+}
