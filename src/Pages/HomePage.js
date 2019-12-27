@@ -16,8 +16,8 @@ function HomePage() {
     }
     return (
         <div className="home-page">
-            <CategoryCard descBackgroundColor = "#FAE9E3" backgroundColor = "#F5F3F2" descrption = {womenDescrption} imgName = 'women.jpg'/>
-            <CategoryCard imgOrder = "2" descBackgroundColor = "#A3C7BD" backgroundColor = "#D3E4DF" descrption = {menDescription} imgName = 'Men.jpg'/>
+            <CategoryCard descBackgroundColor = "#FAE9E3" backgroundColor = "#F5F3F2" descrption = {womenDescrption} imgName = 'women.jpg' linkUrl = '/women' />
+            <CategoryCard imgOrder = "2" descBackgroundColor = "#A3C7BD" backgroundColor = "#D3E4DF" descrption = {menDescription} imgName = 'Men.jpg' linkUrl = '/men' />
         </div>
     )
 }

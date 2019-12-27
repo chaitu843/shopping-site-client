@@ -1,11 +1,12 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom';
 
 import './CategoryCard.scss';
 
-function CategoryCard({ imgName, descBackgroundColor, backgroundColor, descrption: { heading, catchLine, category }, imgOrder }) {
+function CategoryCard({ imgName, descBackgroundColor, backgroundColor, descrption: { heading, catchLine, category }, imgOrder, history, linkUrl }) {
     const imageDir = `assets`;
     return (
-        <div className="category-card-container" style = {{
+        <div className="category-card-container" style={{
             backgroundColor: backgroundColor,
         }
         }>
@@ -13,10 +14,9 @@ function CategoryCard({ imgName, descBackgroundColor, backgroundColor, descrptio
                 <div className="card-image-container" style={{
                     order: imgOrder,
                     backgroundImage: `url(${imageDir}/${imgName})`,
-                    backgroundSize: 'cover'
-                }}>
+                }} onClick={() => history.push(linkUrl)}>
                 </div>
-                <div className="card-desc" style = {{
+                <div className="card-desc" style={{
                     backgroundColor: descBackgroundColor
                 }}>
                     <div className="wrapper">
@@ -31,4 +31,4 @@ function CategoryCard({ imgName, descBackgroundColor, backgroundColor, descrptio
     )
 }
 
-export default CategoryCard
+export default withRouter(CategoryCard);
