@@ -1,0 +1,34 @@
+{
+    "logoInfo" : {
+        "name" : "VESTE",
+        "link" : "/"
+    },
+    "navLinks" : [
+        {
+            "name": "HOME",
+            "link": "/home"
+        },
+        {
+            "name": "COLLECTION",
+            "link": "/collections",
+            "secondaryLinks": [
+                {
+                    "name": "men",
+                    "link": "/men"
+                },
+                {
+                    "name": "women",
+                    "link": "/women"
+                }
+            ]
+        },
+        {
+            "name": "customer care",
+            "link": "/home"
+        },
+        {
+            "name": "visit us",
+            "link": "/home"
+        }
+    ]
+}

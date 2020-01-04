@@ -12,6 +12,7 @@ module.exports = {
     },
     devServer: {
         contentBase: path.resolve('public'),
+        historyApiFallback: true
       },
     module: {
         rules: [{
