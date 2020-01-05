@@ -18,7 +18,7 @@ function CategoryCard({ imgName, descBackgroundColor, backgroundColor, descrptio
                         backgroundImage: `url(${imageDir}/${imgName})`,
                     }}>
                     </div>
-                <span className="card-link"  onClick={() => history.push(linkUrl)}>{shopCTA}</span>
+                <span className="card-link"  onClick={() => history.push(`/products${linkUrl}`)}>{shopCTA}</span>
                 </div>
                 <div className="card-desc" style={{
                     backgroundColor: descBackgroundColor

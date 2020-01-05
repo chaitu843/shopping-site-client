@@ -2,15 +2,22 @@ import React from 'react';
 
 import './ProductCard.scss';
 
-function ProductCard() {
+function ProductCard({product}) {
+    const {
+        name,
+        id,
+        imgPath,
+        price
+    } = product;
+
     return (
         <div className = "product-card">
             <div className = "product-image-container">
-                <img src="/assets/product.png" className = "product-image"/>
+                <img src={imgPath} className = "product-image"/>
             </div>
             <div className = "product-desc">
-                <span className = "product-title">SLIM FIT CHINOS</span>
-                <span className = "product-price">$14.99</span>
+    <span className = "product-title">{name}</span>
+    <span className = "product-price">{price}</span>
             </div>
             <div className = "view-details" onClick = {
                 () => {}

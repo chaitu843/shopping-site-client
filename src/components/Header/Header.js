@@ -27,7 +27,7 @@ function Header() {
                                         navLink.secondaryLinks.map(navLink => {
                                             return (
                                                 <div className="secondary-link-container" key={navLink.name} >
-                                                    <NavLink to={navLink.link} className="nav-link">{navLink.name.toUpperCase()}</NavLink>
+                                                    <NavLink to={`/products${navLink.link}`} className="nav-link">{navLink.name.toUpperCase()}</NavLink>
                                                 </div>
                                             )
                                         })

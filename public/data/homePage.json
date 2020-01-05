@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "trending",
+        "id": 0,
+        "heading" : "Trending Now",
+        "link": "/trending"
+    },
+    {
+        "name" : "topRated",
+        "id": 1,
+        "heading" : "Top Rated",
+        "link": "/topRated"
+    },
+    {
+        "name" : "recommended",
+        "id": 2,
+        "heading" : "Recommended For You",
+        "link": "/recommended"
+    }
+]

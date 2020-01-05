@@ -1,0 +1,44 @@
+[
+    {
+        "name": "SLIM FIT CHINOS",
+        "price": "$14.99",
+        "imgPath": "/assets/product.png",
+        "id": 0
+    },
+    {
+        "name": "SLIM FIT CHINOS",
+        "price": "$14.99",
+        "imgPath": "/assets/product.png",
+        "id": 1
+    },
+    {
+        "name": "SLIM FIT CHINOS",
+        "price": "$14.99",
+        "imgPath": "/assets/product.png",
+        "id": 2
+    },
+    {
+        "name": "SLIM FIT CHINOS",
+        "price": "$14.99",
+        "imgPath": "/assets/product.png",
+        "id": 3
+    },
+    {
+        "name": "SLIM FIT CHINOS",
+        "price": "$14.99",
+        "imgPath": "/assets/product.png",
+        "id": 4
+    },
+    {
+        "name": "SLIM FIT CHINOS",
+        "price": "$14.99",
+        "imgPath": "/assets/product.png",
+        "id": 5
+    },
+    {
+        "name": "SLIM FIT CHINOS",
+        "price": "$14.99",
+        "imgPath": "/assets/product.png",
+        "id": 6
+    }
+]
