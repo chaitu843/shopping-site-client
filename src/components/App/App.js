@@ -11,10 +11,10 @@ import HomePage from '../../Pages/HomePage';
 const App = () => (
     <Router>
         <Header/>
-        {/* <Switch>
+        <Switch>
             <Route path = '/' component = {HomePage} exact/>
-            <Route path = '/' component = {ProductCard} />
-        </Switch> */}
+            <Route path = '/products' component = {ProductCard} />
+        </Switch>
     </Router>
 )
 export default App;

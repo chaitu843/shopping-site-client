@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 
 import './CategoryCard.scss';
 
-function CategoryCard({ imgName, descBackgroundColor, backgroundColor, descrption: { heading, catchLine, category }, imgOrder, history, linkUrl }) {
+function CategoryCard({ imgName, descBackgroundColor, backgroundColor, descrption: { heading, catchLine, category }, imgOrder, history, linkUrl, shopCTA}) {
     const imageDir = `assets`;
     return (
         <div className="category-card-container" style={{
@@ -11,10 +11,14 @@ function CategoryCard({ imgName, descBackgroundColor, backgroundColor, descrptio
         }
         }>
             <div className="card-details">
-                <div className="card-image-container" style={{
-                    order: imgOrder,
-                    backgroundImage: `url(${imageDir}/${imgName})`,
-                }} onClick={() => history.push(linkUrl)}>
+                <div className="card-image-container" style = {{
+                    order: imgOrder
+                }}>
+                    <div className="card-image" style={{
+                        backgroundImage: `url(${imageDir}/${imgName})`,
+                    }}>
+                    </div>
+                <span className="card-link"  onClick={() => history.push(linkUrl)}>{shopCTA}</span>
                 </div>
                 <div className="card-desc" style={{
                     backgroundColor: descBackgroundColor
