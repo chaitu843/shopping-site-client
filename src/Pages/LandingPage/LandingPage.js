@@ -1,5 +1,7 @@
 import React from 'react'
-import CategoryCard from '../components/CategoryCard/CategoryCard';
+import CategoryCard from '../../components/CategoryCard/CategoryCard';
+
+import './LandingPage.scss';
 
 function LandingPage() {
 

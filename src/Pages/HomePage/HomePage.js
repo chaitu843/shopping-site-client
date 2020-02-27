@@ -1,7 +1,8 @@
 import React from 'react'
-import Section from '../components/Section/Section'
 
-import sections from '../../public/data/homePage.json';
+import './HomePage.scss';
+import Section from '../../components/Section/Section'
+import sections from '../../../public/data/homePage.json';
 
 function HomePage() {
 

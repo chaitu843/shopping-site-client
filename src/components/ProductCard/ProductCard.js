@@ -1,8 +1,9 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom';
 
 import './ProductCard.scss';
 
-function ProductCard({product}) {
+function ProductCard({history, product}) {
     const {
         name,
         id,
@@ -22,10 +23,10 @@ function ProductCard({product}) {
             <div className = "view-details" onClick = {
                 () => {}
             }>
-                <span>View Details</span>
+                <span onClick = {() => history.push(`/products/product/${product.id}`)}>View Details</span>
             </div>
         </div>
     )
 }
 
-export default ProductCard
+export default withRouter(ProductCard);

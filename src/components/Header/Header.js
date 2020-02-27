@@ -46,3 +46,7 @@ function Header() {
 }
 
 export default Header;
+
+// Need to implement cart, signIn and signUp
+
+// Product Overview Page

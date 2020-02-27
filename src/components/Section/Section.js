@@ -1,4 +1,5 @@
 import React from 'react'
+import {withRouter} from 'react-router-dom';
 
 import './Section.scss';
 
@@ -11,6 +12,8 @@ function Section(props) {
     const {
         name,
         heading,
+        link,
+        history
     } = props;
 
     return (
@@ -26,14 +29,14 @@ function Section(props) {
                 }
 
                 <div className = "see-more">
-                    <div className = "right-arrow">&rarr;</div>
+                    <div className = "right-arrow" onClick = {() => history.push(`/products${link}`)}>&rarr;</div>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Section
+export default withRouter(Section);
 
 // Make a fetch request for every section name and get corresponding products 
 // Also keep a check for products and render a loader if needed.
